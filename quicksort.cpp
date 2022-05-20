@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int partition (int arr[], int p, int r) {
+int partition(int arr[], int p, int r) {
     int x = arr[r];
     int i = p - 1;
     for (int j = p; j < r; j++) {
@@ -21,7 +21,7 @@ int partition (int arr[], int p, int r) {
     return (i + 1);
 }
 
-void QS (int arr[], int p, int r) {
+void QS(int arr[], int p, int r) {
     if (p < r) {
         int q = partition (arr, p, r);
         QS (arr, p, q - 1);
