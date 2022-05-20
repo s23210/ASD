@@ -38,8 +38,9 @@ int main() {
 
     double elapsed = double(end - start) / CLOCKS_PER_SEC;
 
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < N; i++) {
         cout << array[i] << endl;
+    }
 
     cout << "Elapsed time: " << elapsed << " seconds" << "\n";
 
